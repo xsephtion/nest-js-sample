@@ -19,7 +19,7 @@ export class AuthService {
     }
 
     jwtGen({ username }: CreateUserDto) {
-        const payload = { username, roles: ['r', 'b'] };
+        const payload = { username, role: 'tester' };
         return { accessToken: this.jwtService.sign(payload) }
     }
 
