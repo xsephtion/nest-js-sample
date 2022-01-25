@@ -1,0 +1,29 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Gql {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Query {
+  gql(id: Int!): Gql!
+}
+
+type Mutation {
+  createGql(createGqlInput: CreateGqlInput!): Gql!
+  updateGql(updateGqlInput: UpdateGqlInput!): Gql!
+  removeGql(id: Int!): Gql!
+}
+
+input CreateGqlInput {
+  """Example field (placeholder)"""
+  exampleField: String!
+}
+
+input UpdateGqlInput {
+  """Example field (placeholder)"""
+  exampleField: String
+  id: Int!
+}
